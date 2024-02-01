@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <title>House Construction Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!------------------------------------web icon------------------------------->
+
+    <link rel="icon" href="icon.png">
+
+</head>
+<body >
+
+<!---------------------------------------------------Including CDN------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="calculator.js"></script>
+
+
+<form method="post" action="/adduser">
+
+
+    <!-----------------------------------------------------Cards for details------------------------------------------------------>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-4 mb-5">
+
+                <div class="card-body">
+                    <img src="Plotperty Logo (1).png" alt="Plotperty Logo" style="height: 70px; margin-left: 135px; margin-top: -10px;">
+                    <h1 style="font-size: 23px;margin-left: 10px; margin-top: 0px;text-align: center;">House Area Converter<br>and Material Calculator </h1>
+
+                    <h3 style="font-size: 22px;margin-left: 115px; margin-top: 10px; "><u>Calculator</u></h3>
+
+                </div>
+
+                <div>
+                    <h2 style="font-size: 15px;margin-left: 240px; margin-top: -10px; text-align: center;">Construction<br>Type</h2>
+                </div>
+
+                        <select id="field4" name="field4" style="font-size: 11px; height: 25px; width:80px; margin-left: 265px; margin-top: 20px;" >
+                            <option value="option1">Grey Structure</option>
+                            <option value="option2">Complete</option>
+                        </select>
+
+                <div>
+                    <h2 style="font-size: 15px;margin-left: 10px; margin-top: -90px; text-align: center;">Approx Cost<br>(Per Sq.Ft) </h2>
+                </div>
+
+                        <input style="font-size: 13px; height: 25px; width:70px; margin-left: 145px; margin-top: 20px;" type="number" class="input-field" id="value4" placeholder="Enter value" required>
+                        <select id="field5" name="field5" style="font-size: 11px; height: 25px; width:35px;">
+                            <option value="option1">Rs</option>
+                        </select>
+
+                <div>
+                    <h2 style="font-size: 16px;margin-left: -230px; margin-top: -91px; text-align: center;">Area<br>Size</h2>
+                </div>
+
+                <input style="font-size: 13px; height: 25px; width:70px; margin-left: 5px; margin-top: 18px;" type="number" class="input-field" id="value3" placeholder="Enter value" required>
+                <select id="field3" name="field3" style="font-size: 11px; height: 25px; width:50px;">
+                    <option value="option1">Sq.Ft</option>
+                </select>
+
+
+
+                    <div class="button-container" style="margin-left: 140px; ">
+                        <button style=" margin-top: 10px; height: 30px; width:100px;font-size: 85%;" type="button" onclick="calculate()">Calculate Cost</button>
+                        <h2 style="margin-top: 10px;font-size: 90%; text-align: center; margin-left: -150px;">Calculation of Cost | Approximate amount <br> of cost for given construction is Rs. <span id="demo3"></span></h2>
+                    </div>
+
+                        <table style=" width:300px;margin-top: 10px; margin-left: 30px; border: 1px solid #ddd;">
+                            <thead style="background-color: #ddd;">
+                            <tr>
+                                <th colspan="2">Approximate cost on various works of materials per thumb rule</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td> </td>
+                                <td>All amounts</td>
+                            </tr>
+                            <tr>
+                                <td>Cement </td>
+                                <td> <span id="cementcost"> </span></td>
+                            </tr>
+                            <tr>
+                                <td>Sand </td>
+                                <td> <span id="sandcost"> </span></td>
+                            </tr>
+                            <tr>
+                                <td>Aggregate </td>
+
+                                <td> <span id="aggregatecost"> </span></td>
+                            </tr>
+                            <tr>
+                                <td>Steel</td>
+
+                                <td> <span id="steelcost"> </span></td>
+                            </tr>
+                            <tr>
+                                <td>Fittings <br>(Window  + Doors + Plumbing<br>  + Electrical  + Sanitary) </td>
+
+                                <td> <span id="fittingscost"> </span></td>
+                            </tr>
+                            <tr>
+                                <td>Finishers<br>(Paint  + Tiles + Bricks )</td>
+
+                                <td> <span id="finisherscost"> </span></td>
+                            </tr>
+                            <tr>
+                                <td>Total Cost</td>
+
+                                <td> <span id="totalcost"> </span></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+</form>
+</body>
+</html>

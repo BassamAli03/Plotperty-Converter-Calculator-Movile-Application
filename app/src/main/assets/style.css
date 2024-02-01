@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    background-color: #ffffff;
+
+    height: 0vh;
+    width: 100vw;
+
+
+}
+
+
+
+#ucard3{
+    top: 95px;
+        left: 300px;
+        width: 130px;
+}
+#ucard4{
+
+    top: -30px;
+        left: 750px;
+        width: 130px;
+
+}
+#ucard5{
+    top: 165px;
+    left: 750px;
+    width: 130px;
+}
+#ucard6{
+    top: 20px;
+    left: 750px;
+    width: 130px;
+    
+}
+.button-container button{
+width: 150px;
+height: 40px;
+background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+color: white;
+font-size: 1.2rem;
+border: none;
+cursor: pointer;
+border-radius: 2rem;
+}
+
+.label{
+    font-weight: bold;
+
+}
+
+thead{
+    background-color: #ddd;
+}
+th, td {
+ font-weight: bold;
+    padding: 3px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}

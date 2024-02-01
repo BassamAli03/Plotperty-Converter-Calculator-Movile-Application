@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Plotperty</string>
+    <string name="calculator">Calculate</string>
+    <string name="converter">Convert</string>
+    <string name="opendrawer">Drawer Open</string>
+    <string name="closedrawer">Drawer Close</string>
+    <string name="textview">Area Converter</string>
+    <string name="textview1">Construction Calculator</string>
+    <string name="to">TO</string>
+    <string name="Result">Result:</string>
+    <string name="Extras">Extras</string>
+    <string name="Share">Share</string>
+    <string name="col1">Approximate cost on various works of materials per thumb rule</string>
+    <string name="row1">All Amounts</string>
+    <string name="row2">Cement</string>
+    <string name="row3">Sand</string>
+    <string name="row4">Aggregate</string>
+    <string name="row5">Steel</string>
+    <string name="row6">Fittings(Window+Doors+Plumbing+Electrical+Sanitary)</string>
+    <string name="row7">Finishers(Paint+Tiles+Bricks)</string>
+    <string name="row8">Total Cost</string>
+    <string name="Area">Area\nSize(Sq.Ft)</string>
+    <string name="Cost">Approx Cost\n(Per Sq.Ft) in Rs.</string>
+    <string name="Type">Construction\nType</string>
+    <string name="desc">World\'s Most Highly-Rated \nReal Estate Application</string>
+
+
+
+
+</resources>

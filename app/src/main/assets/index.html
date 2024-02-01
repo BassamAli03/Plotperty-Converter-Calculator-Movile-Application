@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <title>House Construction Cost Calculator</title>
+    <link rel="stylesheet" href="style.css"> 
+
+<!------------------------------------web icon------------------------------->
+
+<link rel="icon" href="icon.png">
+
+</head>
+<body >
+    
+<!---------------------------------------------------Including CDN------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="converter.js"></script>
+
+
+
+<form method="post" action="/adduser">
+
+
+    <!-----------------------------------------------------Cards for details------------------------------------------------------>
+
+    <div class="container mt-2">
+         <div class="row">
+             <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-4 mb-5">
+
+
+                    <div class="card-body">
+                        <img src="Plotperty Logo (1).png" alt="Plotperty Logo" style="height: 70px; margin-left: 135px; margin-top: 0px;" >
+                        <h1 style="font-size: 23px;margin-left: 10px; margin-top: 10px;text-align: center;">House Area Converter<br>and Material Calculator</h1>
+
+<h3 style="font-size: 22px;margin-left: 115px; margin-top: 30px;"><u>Converter</u></h3>
+
+                     </div>
+
+                        <input  style="font-size: 16px;margin-left: 45px; margin-top: 30px; height: 35px ; width: 170px; " type="number" class="input-field" id="value1" placeholder=" Enter value" required>
+                        <select id="field1" name="field1" style="font-size: 16px; height: 35px;width: 85px;">
+                            <option value="option1">Marla</option>
+                            <option value="option2">Kanal</option>
+                            <option value="option3">Sq.Ft</option>
+                            <option value="option4">Sq.Yards</option>
+                            <option value="option5">Sq.Meters</option>
+                            <option value="option6">Acre</option>
+                            <option value="option7">Murabba</option>
+                        </select>
+
+                 <div>
+                     <h2 style="font-size: 20px;margin-left: 170px; margin-top: 25px;">TO</h2>
+
+                 </div>
+                        <select id="field2" name="field2"style="font-size: 16px;margin-left: 135px; margin-top: 15px; height: 35px ;">
+                            <option value="option1">Marla</option>
+                            <option value="option2">Kanal</option>
+                            <option value="option3">Sq.Ft</option>
+                            <option value="option4">Sq.Yards</option>
+                            <option value="option5">Sq.Meters</option>
+                            <option value="option6">Acre</option>
+                            <option value="option7">Murabba</option>
+                        </select>
+
+                    <div class="button-container" style="margin-left: 115px; ">
+                        <button style=" margin-top: 60px; "type="button" onclick="convert()">Convert Area</button>
+                        <h2 style="margin-top: 30px;font-size: 130%; text-align: center; margin-left: -130px;">Result: <span id="demo1"></span><span id="result1" style="margin-left: 10px;"></span><span id="demo2" style="margin-left: 10px;"></span><span id="result2" style="margin-left: 10px;"></span></h2>
+                    </div>
+
+
+
+                    </div>
+
+                 </div>
+
+                </div>
+         
+
+</form>
+</body>
+</html>

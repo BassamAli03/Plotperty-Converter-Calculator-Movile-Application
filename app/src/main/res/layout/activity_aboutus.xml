@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutusActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/plotpertylogo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Plotperty"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/desc"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/baseline_account_circle_24"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developer : Plotperty"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageButton
+            android:id="@+id/mail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/baseline_email_24"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/mail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send an Email"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="190dp"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageButton
+            android:id="@+id/rate"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/baseline_play_arrow_24"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/rate1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate us on Playstore"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame4"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageButton
+            android:id="@+id/visit"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/website_img"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/visit1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit our Website"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame5"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="310dp"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageButton
+            android:id="@+id/contact"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/whatsapp_logo"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/contact1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us on Whatsapp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
